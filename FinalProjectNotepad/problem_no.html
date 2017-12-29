@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="nb-NO">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <!-- font-family: 'Quicksand', sans-serif; -->
+
+		
+		
+		<title>ShareSafe</title>
+	</head>
+	<body>
+		<div class="navbar setfont" id="getResponsive">
+			<a href="index_no.html">Hjem</a>
+			<a class="current" href="problem_no.html">Vårt Problem</a>
+			<a href="solution_no.html">Vår Løsning</a>
+			<a href="sources_no.html">Kilder</a>
+			<div class="dropdown">
+				<a href="problem_en.html"> en</a>
+				<a href="problem_no.html"> no</a>
+				<a href="problem_de.html"> de</a>
+			</div>
+			<a href="#" style="font-size:15px;" class="icon">&#9776;</a>
+		</div>
+		
+		<div  class="parallax" id="para1-prob">
+			<div class="display-center setfont">
+				<h1>PROBLEMET</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div class="inner">
+				<p>
+					I takt med at den teknologiske utviklingen går fremover, tar vi i bruk 
+					stadig flere digitale verktøy og tjenester. Tall fra SSB viset at 
+					internettbruken hos nordmenn har økt fra 7%<a href="sources_en.html">[9]</a> av 
+					befolkningen til 96%<a href="sources_en.html">[10]</a> 
+					på 20 år. Som et resultat av dette legger vi igjen større og større mengder 
+					persondata hos de forskjellige leverandørene av digitale tjenester samt hos 
+					bedrifter som baserer seg på innsamling og salg av data. Noe av dette er 
+					informasjon som vi frivillig gir fra oss, men en stor del av informasjonen 
+					som samles inn, blir innhentet uten at sluttbruker nødvendigvis er klar over det. 
+				</p>
+				<p>
+					Statistikk fra SSB`s årlige undersøkelse om nordmenns medievaner underbygger påstanden om 
+					at vi i økende grad lever «online».
+				</p>
+			</div>
+			
+			<div class="imgwrap">
+			<img src="images/InternetNorwPop.PNG" alt="Graph of internet usage in Norway">
+			<img src="images/Smartphoneaccess.PNG" alt="Graph of smartphone access in Norway">
+			</div>
+			
+			<div class="inner">	
+				<p>
+					Innhenting av informasjon: 
+					Innhenting av brukerdata foregår på mange forskjellige måter. Noen mer åpenlyse 
+					enn andre. De fleste er i dag kjent med at det samles inn store mengder data gjennom 
+					bruk av sosiale medieplatformer, men hvor mange har egentlig oversikt over hvilke 
+					fullmakter som gis til tjenestetilbyder ved å akseptere brukervilkårene til tjenesten.
+
+				</p>
+				<p>Det er heller ikke åpenlyst for den gjennomsnittlige bruker hvilke andre data som samles inn via:</p>
+				<ul>
+					<li>Browser-trackere
+					<li>Browser fingerprinting
+					<li>Lokasjonstjenester
+					<li>Smartphone applikasjoner
+					<li>"Smarte"-dingser med konnektivitet (IoT)
+				</ul>
+				<p> Vår problemstilling er som følger:</p>
+				<p>
+					Vi ønsker å skape større bevissthet om innsamling av data og hvordan disse blir brukt. 
+					Utfordringen i å oppnå dette ligger i stor grad i at det for den gjennomsnittlige bruker er vanskelig å få 
+					oversikt over mengden av digitale spor som legges igjen via nettlesere, smarttelefoner og andre tilkoblede enheter. 
+				</p>
+				<p>
+					Vår løsning på dette problemet heter ShareSafe som du kan lese mere om ved å velge 
+					Vår Løsning i navigasjonsfeltet, eller ved å trykke <a href="solution_no.html">her.</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="parallax" id="para2-prob">
+		</div>
+		
+		<div class="footer setfont">
+				<ul id="footer-nav">
+					<li><a href="index_no.html">Hjem</a></li>
+					<li><a href="problem_no.html">Vårt Problem</a></li>
+					<li><a href="solution_no.html">Vår Løsning</a></li>
+					<li><a href="sources_no.html">Kilder</a></li>
+					<li id="lang"><a href="problem_en.html"> en</a></li>
+					<li id="lang"><a href="problem_no.html"> no</a></li>
+					<li id="lang"><a href="problem_de.html"> de</a></li>
+				</ul>
+		</div>
+		
+	
+		<script>
+			var res = document.getElementById("getResponsive");
+			res.addEventListener("click", function() {
+				var lang = document.getElementsByClassName("dropdown");
+				if (res.className === "navbar setfont") {					
+					res.className += " responsive setfont";
+					lang[0].style.display = "block";
+				}
+				else {
+					res.className = "navbar setfont";
+					lang[0].style.display = "none";
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <!-- font-family: 'Quicksand', sans-serif; -->
+
+		
+		
+		<title>ShareSafe</title>
+	</head>
+	<body>
+		<div class="navbar setfont" id="getResponsive">
+			<a href="index.html">Home</a>
+			<a href="problem_en.html">Our Problem</a>
+			<a href="solution_en.html">Our Solution</a>
+			<a class="current" href="sources_en.html">Sources</a>
+			<div class="dropdown">
+				<a href="sources_en.html"> en</a>
+				<a href="sources_no.html"> no</a>
+				<a href="sources_de.html"> de</a>
+			</div>
+			<a href="#" style="font-size:15px;" class="icon">&#9776;</a>
+		</div>
+		
+		<div  class="parallax" id="para1-grp">
+			<div class="display-center setfont">
+				<h1>SOURCES</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div class="row-wrapper">
+				<div class="inner">
+					<p>
+						Our main focus during the whole forming and developing process of ShareSafe 
+						was to have Good Accessibility. The content is without a doubt important, but 
+						if the information isn’t mediated in a easy and universal manner, then the 
+						purpose of good content dissolves. From the beginning we used sites 
+						like <a href="https://www.w3.org/WAI/">W3</a> and <a href="https://www.w3schools.com/">W3-School</a> to 
+						create a webpage that is easy to access and user friendly to all.
+					</p>
+					<p>
+						Good contrasts are important for users with impaired vision, we have used Leaveou 
+						for our colour choices. In addition we have used <a href="http://checkers.eiii.eu/">Checkers</a> to measure our site with 
+						the guidelines for Web Accessibility. Our Goal was to achieve the highest possible accessibility benchmark wich is 90% or higher. This qualifies as a Web page with good accessibility. 
+					</p>
+					<p>
+						For our image handling we have decided to use so called free stock photos. 
+						These are images which are not protected by the copyright and are 
+						available for everyone under the <a href="https://wiki.creativecommons.org/wiki/CC0_FAQ">CC0 policy.</a> 
+						Here we mainly used <a href="https://www.pexels.com/">Pexels.com</a>
+					</p>
+					<p>
+						Statistics are sourced from SSB <a href="https://www.ssb.no/kultur-og-fritid/artikler-og-publikasjoner/norsk-mediebarometer-2016">Norsk Mediebarometer 2016.</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="parallax" id="para2-grp">
+		</div>
+		
+		<div class="footer setfont">
+				<ul id="footer-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="problem_en.html">Our Problem</a></li>
+					<li><a href="solution_en.html">Our Solution</a></li>
+					<li><a href="sources_en.html">Sources</a></li>
+					<li id="lang"><a href="sources_en.html"> en</a></li>
+					<li id="lang"><a href="sources_no.html"> no</a></li>
+					<li id="lang"><a href="sources_de.html"> de</a></li>
+				</ul>
+		</div>
+		
+		<script>
+			var res = document.getElementById("getResponsive");
+			res.addEventListener("click", function() {
+				var lang = document.getElementsByClassName("dropdown");
+				if (res.className === "navbar setfont") {					
+					res.className += " responsive setfont";
+					lang[0].style.display = "block";
+				}
+				else {
+					res.className = "navbar setfont";
+					lang[0].style.display = "none";
+				}
+			});
+		</script>
+		
+	</body>
+</html>
