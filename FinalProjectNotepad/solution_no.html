@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="nb-NO">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <!-- font-family: 'Quicksand', sans-serif; -->
+
+		
+		
+		<title>Final Assignment</title>
+	</head>
+	<body>
+		<div class="navbar setfont" id="getResponsive">
+			<a href="index_no.html">Hjem</a>
+			<a href="problem_no.html">Vårt problem</a>
+			<a class="current" href="solution_no.html">Vår løsning</a>
+			<a href="sources_no.html">Kilder</a>
+			<div class="dropdown">
+				<a href="solution_en.html"> en</a>
+				<a href="solution_no.html"> no</a>
+				<a href="solution_de.html"> de</a>
+			</div>
+			<a href="#" style="font-size:15px;" class="icon">&#9776;</a>
+		</div>
+		
+		<div  class="parallax" id="para1-sol">
+			<div class="display-center setfont">
+				<h1>VÅR LØSNING</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div>
+				<h2>ShareSafe!</h2>
+			</div>
+			<div class="inner">
+				<p> De fleste av oss har opplevd internettreklame som er mistenksomt tilpasset våre personlige interesser.</p>
+                
+                <p>Internettaktivitet gjenspeiler mye av reklamen som dukker  opp, hovedsakelig på de ulike sosiale medier. Få av oss har verken tid eller vilje til å lese gjennom vilkårene man godtar og takker uvitende ja til informasjons- og posisjonsdeling. </p>
+                
+                <p>Vår tjeneste tilbyr en mulighet til å holde kontroll over dine personlige data og hvem disse eventuelt deles med. Du vil i tillegg til å se hvilke aktører som deler/samler din informasjon også få et innblikk i hvilken type informasjon som deles. Om ønskelig vil det  være mulig å se hvilke eksterne aktører informasjonen blir solgt til. </p>
+                
+                <p>I de påfølgende avsnittene vil du få en detaljert oversikt over ShareSafe sine  funksjonaliteter. </p>
+                
+			</div>
+		</div>
+		
+		<div class="parallax" id="para2-sol">
+			<div class="display-center setfont">
+				<h1>FUNKSJONALITET</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div class="row-wrapper">
+				<div class="inner">
+                    <p>I brukerens daglige aktivitet ligger ShareSafe og lytter til informasjonsdeling mellom bruker og de eventuelle besøkte internettaktørene. I tilfeller hvor informasjon deles vil brukeren bli varslet av et lite vindu oppe i høyre hjørne i nettleseren. Dette vinduet gir en kort oversikt over hvilken type informasjon som deles. Du vil her også få valget om å trykke deg videre på en mer detaljert oversikt. Ved ønske, kan brukeren slå av varsler  for spesifikke nettsider.</p>
+                    
+					<p>I møte med vårt varslingssenter vil du få en mer detaljert oversikt over hva som deles. Vi har valgt å kategorisere informasjonen som deles i tre risikonivåer. Dette strekker seg mellom høy, middels og lav. Risikoen er rangert ut ifra hvor sensitiv informasjonen er for brukeren. Hensikten er at det skal være raskt og enkelt for brukeren å identifisere eventuelle trusler. </p>
+                    
+                    <p>Innenfor de tre kategoriene vil du få en mer konkret visualisering av hvilke typer informasjon som blir delt av det respektive nettstedet. </p>
+                    
+                    <p>Typer kan for eksempel være:</p>
+                        <ul> 
+                            <li>Posisjonsdeling </li> 
+                            <li>Sensitiv informasjon (E-post, brukernavn, passord, osv.. )</li>
+                            <li>IP - adresse </li>
+                            <li>Aktivitet på siden (Besøkte annonser osv.. ) </li>
+                            <li>Enhetsinformasjon </li> 
+                        </ul> 
+                    
+                    <p> Alle disse punktene kan til varierende grad være sjenerende for brukeren og ingen ønsker å bli ufrivillig overvåket. Uansett i hvilken skala. Ta et steg mot bedre nettsikkerhet! </p>
+                    
+                    <p>Bildet nedenfor gir deg en indikasjon på hvordan den reelle nettsiden kunne sett ut. Her vil du kunne laste ned, og programvaren implementeres automatisk i nettleseren.</p>
+                    
+              <figure>     
+                <img src ="images/ShareSafe_no.png" alt ="Nedlastningsnettsted" width="100%" height="100%"> 
+                  <figcaption> Fiktivt nettsted for nedlastning av programvare </figcaption>
+                    </figure>
+				</div>
+			</div>
+		</div>
+		
+		<div class="parallax" id="para3-sol">
+		</div>
+		
+		<div class="footer setfont">
+				<ul id="footer-nav">
+					<li><a href="index_no.html">Hjem</a></li>
+					<li><a href="problem_no.html">Vårt Problem</a></li>
+					<li><a href="solution_no.html">Vår Løsning</a></li>
+					<li><a href="sources_no.html">Kilder</a></li>
+					<li id="lang"><a href="solution_en.html"> en</a></li>
+					<li id="lang"><a href="solution_no.html"> no</a></li>
+					<li id="lang"><a href="solution_de.html"> de</a></li>
+				</ul>
+		</div>
+		
+		<script>
+			var res = document.getElementById("getResponsive");
+			res.addEventListener("click", function() {
+				var lang = document.getElementsByClassName("dropdown");
+				if (res.className === "navbar setfont") {					
+					res.className += " responsive setfont";
+					lang[0].style.display = "block";
+				}
+				else {
+					res.className = "navbar setfont";
+					lang[0].style.display = "none";
+				}
+			});
+		</script>
+		
+	</body>
+</html>

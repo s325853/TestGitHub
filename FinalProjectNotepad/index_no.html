@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html html lang="nb-NO">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <!-- font-family: 'Quicksand', sans-serif; -->
+
+		
+		
+		<title>ShareSafe</title>
+	</head>
+	<body>
+		<div class="navbar logo setfont" id="getResponsive">
+			<a class="current-logo" href="index_no.html">Hjem</a>
+			<a href="problem_no.html">Vårt Problem</a>
+			<a href="solution_no.html">Vår Løsning</a>
+			<a href="sources_no.html">Kilder</a>
+			<div class="dropdown">
+				<a href="index.html"> en</a>
+				<a href="index_no.html"> no</a>
+				<a href="index_de.html"> de</a>
+			</div>
+			<a href="#" style="font-size:15px;" class="icon">&#9776;</a>
+		</div>
+		<div class="jumbotron">
+			<div class="jumbo-banner setfont">
+				<h1>ShareSafe</h1>
+				<h2>gjenerobre ditt privatliv</h2>
+			</div>
+		</div>
+		
+		
+		<script>
+			var res = document.getElementById("getResponsive");
+			res.addEventListener("click", function() {
+				var lang = document.getElementsByClassName("dropdown");
+				if (res.className === "navbar logo setfont") {					
+					res.className += " responsive";
+					lang[0].style.display = "block";
+				}
+				else {
+					res.className = "navbar logo setfont";
+					lang[0].style.display = "none";
+				}
+			});
+		</script>
+	</body>
+</html>

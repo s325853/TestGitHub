@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="no-NB">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <!-- font-family: 'Quicksand', sans-serif; -->
+
+		
+		
+		<title>ShareSafe</title>
+	</head>
+	<body>
+		<div class="navbar setfont" id="getResponsive">
+			<a href="index_no.html">Hjem</a>
+			<a href="problem_no.html">Vårt Problem</a>
+			<a href="solution_no.html">Vår Løsning</a>
+			<a class="current" href="sources_no.html">Kilder</a>
+			<div class="dropdown">
+				<a href="sources_en.html"> en</a>
+				<a href="sources_no.html"> no</a>
+				<a href="sources_de.html"> de</a>
+			</div>
+			<a href="#" style="font-size:15px;" class="icon">&#9776;</a>
+		</div>
+		
+		<div  class="parallax" id="para1-grp">
+			<div class="display-center setfont">
+				<h1>KILDEBRUK</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div class="row-wrapper">
+				<div class="inner">
+					<p>
+						Gjennom hele prosessen med å forme og utvikle informasjonssiden om ShareSafe har vi hatt Web Accessibility i fokus. Innhold er selvfølgelig 
+						viktig, men hvis ikke informasjonen blir formidlet på en enkel og universal måte så forsvinner hensikten med et godt innhold. 
+						Fra starten har vi brukt sider som for eksempel <a href="https://www.w3.org/WAI/">W3</a> og <a href="https://www.w3schools.com/">W3-School</a> 
+						for å utforme siden slik at den er enkel, og ikke minst brukervennlig for alle.
+					</p>
+					<p>
+						Gode kontraster er viktig for brukere med synsvansker og ved valg av farger på vår side  har vi brukt <a href="http://leaverou.github.io/contrast-ratio/">Leaverou.</a> Vi har også brukt 
+						<a href="http://checkers.eiii.eu/">Checkers</a> for å måle siden vår opp mot retningslinjene for Web Accessibility. Målet har vært å yte over 90% som kvalifiserer som god accessibility.   
+					</p>
+					<p>
+						I bildebruken så har vi brukt såkalte free stock photos. Dette er bilder som ikke er beskyttet av opphavsrett og er tilgjengelig for allmenn bruk via <a href="https://wiki.creativecommons.org/wiki/CC0_FAQ">CC0 lisens.</a> Her har vi hovedsakelig 
+						brukt Pexels.com 
+					</p>
+					<p>
+						Statistikk er hentet fra <a href="https://www.ssb.no/kultur-og-fritid/artikler-og-publikasjoner/norsk-mediebarometer-2016">Norsk Mediebarometer 2016.</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="parallax" id="para2-grp">
+		</div>
+		
+		<div class="footer setfont">
+				<ul id="footer-nav">
+					<li><a href="index_no.html">Hjem</a></li>
+					<li><a href="problem_no.html">Vårt Problem</a></li>
+					<li><a href="solution_no.html">Vår Løsning</a></li>
+					<li><a href="sources_no.html">Kilder</a></li>
+					<li id="lang"><a href="sources_en.html"> en</a></li>
+					<li id="lang"><a href="sources_no.html"> no</a></li>
+					<li id="lang"><a href="sources_de.html"> de</a></li>
+				</ul>
+		</div>
+		
+		<script>
+			var res = document.getElementById("getResponsive");
+			res.addEventListener("click", function() {
+				var lang = document.getElementsByClassName("dropdown");
+				if (res.className === "navbar setfont") {					
+					res.className += " responsive setfont";
+					lang[0].style.display = "block";
+				}
+				else {
+					res.className = "navbar setfont";
+					lang[0].style.display = "none";
+				}
+			});
+		</script>
+		
+	</body>
+</html>

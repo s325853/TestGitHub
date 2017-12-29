@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <!-- font-family: 'Quicksand', sans-serif; -->
+
+		
+		
+		<title>Final Assignment</title>
+	</head>
+	<body>
+		<div class="navbar setfont" id="getResponsive">
+			<a href="index_de.html">Startseite</a>
+			<a href="problem_de.html">Unser Problem</a>
+			<a class="current" href="solution_de.html">Unser Vorschlag</a>
+			<a href="sources_de.html">Quellen</a>
+			<div class="dropdown">
+				<a href="solution_en.html"> en</a>
+				<a href="solution_no.html"> no</a>
+				<a href="solution_de.html"> de</a>
+			</div>
+			<a href="#" style="font-size:15px;" class="icon">&#9776;</a>
+		</div>
+		
+		<div  class="parallax" id="para1-sol">
+			<div class="display-center setfont">
+				<h1>UNSER VORSCHLAG</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div>
+				<h2>ShareSafe!</h2>
+			</div>
+			<div class="inner">
+				<p> Die meisten von uns haben miterlebt wie eine Internet Reklame verdächtige Eigenschaften teilen mit unseren Persönlichen Interessen.</p>
+                
+                <p>Die Internet Aktivität spiegelt viel von den Reklamen die auftauchen in den verschiedenen Sozialen Medien. Wenige von uns haben weder Zeit noch Interesse die Gebrauchs und Servicebedingungen durch zu lesen, wir klicken auf akzeptieren ohne richtige im gewissen zu sein was wir eigentlich gutheißen.</p>
+                
+                <p>Unsere Dienstleistung offeriert die Möglichkeit eine gute Kontrolle zu haben über deine Persönlichen Daten und wer Zugriff auf diese hat. Zusätzlich willst du sehen welche Interessenten deine Information teilen oder sammeln, darüber hinaus willst du eine Einsicht bekommen über welchen Art von Information Geteilt wird. Auf Wunsch bedarf wird es auch möglich sein zu sehen welche externe Interessenten Information verkauft wird. </p>
+                
+                <p>Im Nächsten abschnitt wirst du eine mehr detaillierte Übersicht bekommen über ShareSafe und seine Funktionalitäten.</p>
+                
+			</div>
+		</div>
+		
+		<div class="parallax" id="para2-sol">
+			<div class="display-center setfont">
+				<h1>FUNKTIONALITÄT</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div class="row-wrapper">
+				<div class="inner">
+                    <p>Im  Benutzer Alltag wird ShareSafe mit analysieren die Information Teilungen zwischen dem Nutzer und eventuelle besuchte Internet Kandidaten. Im Zufall wo persönliche Informationen geholt werden, kann ShareSafe diese Aufspüren und dem Nutzer eine Warnung geben. Die Warnung wird in einem kleinen Fenster Rechts oben im Internet Browser angezeigt. Dieses Fenster gibt eine kleine Beschreibung über welche Typ Information geteilt wird. Du wirst hiermit eine Wahl bekommen weiter zu klicken und eine mehr detaillierte Übersicht zu lesen. Je nach bedarf kann der Benutzer diese Benachritigungen ausschalten bei spezifischen Internet Seiten.</p>
+                    
+					<p>Im Zusammenhang mit Unserer Benachrichtigung Zentrale willst du eine mehr detaillierte Übersicht bekommen, über was geteilt wird. Wir haben uns Entschieden unsere Warnung in 3 Risiko Niveaus zu kategorisieren.  Diese werden sich unterscheiden zwischen hohem, mittelmäßig und niedriges Risiko. Unser Risiko System ist arrangiert je nach wie Sensitiv diese Information ist für den Benutzer. Der Zweck ist dass, dieser Prozess schnell und effektiv eventuelle Bedrohungen identifiziert.</p>
+                    
+                    <p>Innerhalb von diesen 3 Kategorien wirst du eine mehr konkrete Visualisierung von welchen typ Information dass, geteilt wird mit der respektiven Internet Seite.</p>
+                    
+                    <p>Art von Benachritigungen:</p>
+                        <ul> 
+                            <li>Standortfreigabe </li> 
+                            <li>Sensitive Information (E-Post, Benutzer Name, Passwort, usw..)</li>
+                            <li>IP- Adresse</li>
+                            <li>Aktivität auf der Seite (Besuchte Anzeigen usw..) </li>
+                            <li>Geräteinformationen</li> 
+                        </ul> 
+                    
+                    <p> Alle diese Punkte können bis zu einem gewissen grad lästig sein für den Benutzer. Niemand will unbewusst Überwacht sein. Unabhängig von der Scala. Nimm einen Schritt in Richtung bessere Internet Sicherheit. </p>
+                    
+                    <p>Das Bild unten wird dir eine Indikation geben wie die reelle Internet Seite aussehen kann. Hier wirst du Unsere Software downloaden können und es wird automatisch implementiert in deinem Browser.</p>
+                    
+              <figure>     
+                <img src ="images/ShareSafe_de.png" alt ="Download Seite" width="100%" height="100%"> 
+                  <figcaption> Fiktionale Webseite für den Software Download </figcaption>
+                    </figure>
+				</div>
+			</div>
+		</div>
+		
+		<div class="parallax" id="para3-sol">
+		</div>
+		
+		<div class="footer setfont">
+				<ul id="footer-nav">
+					<li><a href="index_de.html">Startseite</a></li>
+					<li><a href="problem_de.html">Unser Problem</a></li>
+					<li><a href="solution_de.html">Unser Vorschlag</a></li>
+					<li><a href="sources_de.html">Quellen</a></li>
+					<li id="lang"><a href="solution_en.html"> en</a></li>
+					<li id="lang"><a href="solution_no.html"> no</a></li>
+					<li id="lang"><a href="solution_de.html"> de</a></li>
+				</ul>
+		</div>
+		
+		<script>
+			var res = document.getElementById("getResponsive");
+			res.addEventListener("click", function() {
+				var lang = document.getElementsByClassName("dropdown");
+				if (res.className === "navbar setfont") {					
+					res.className += " responsive setfont";
+					lang[0].style.display = "block";
+				}
+				else {
+					res.className = "navbar setfont";
+					lang[0].style.display = "none";
+				}
+			});
+		</script>
+		
+	</body>
+</html>

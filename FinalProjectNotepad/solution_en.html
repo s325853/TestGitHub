@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheet2.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <!-- font-family: 'Quicksand', sans-serif; -->
+
+		
+		
+		<title>Final Assignment</title>
+	</head>
+	<body>
+		<div class="navbar setfont" id="getResponsive">
+			<a href="index.html">Home</a>
+			<a href="problem_en.html">Our Problem</a>
+			<a class="current" href="solution_en.html">Our Solution</a>
+			<a href="sources_en.html">Sources</a>
+			<div class="dropdown">
+				<a href="solution_en.html"> en</a>
+				<a href="solution_no.html"> no</a>
+				<a href="solution_de.html"> de</a>
+			</div>
+			<a href="#" style="font-size:15px;" class="icon">&#9776;</a>
+		</div>
+		
+		<div  class="parallax" id="para1-sol">
+			<div class="display-center setfont">
+				<h1>THE SOLUTION</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div>
+				<h2>ShareSafe!</h2>
+			</div>
+			<div class="inner">
+				<p> Most of us have experienced internet advertisement which is suspiciously customized to our personal interests. </p>
+                
+                <p>Internet activity reflects a large amount of advertisement that pops up, mainly on the social medias. A selected few of us have the time and patience to read through the conditions and services. Most of us skip these and blindly accept the propositions which include information and location sharing. </p>
+                
+                <p>Our service offers an opportunity to keep control over your personal data and who has access to it. In addition you will view which stakeholders share or accumulate your information, and you will get an insight over what type of information gets shared. If desirable it will be possible to view which external stakeholders your information will be sold to. </p>
+                
+                <p>In the following sections you will get a more detailed review over ShareSafe and its functionalities. </p>
+                
+			</div>
+		</div>
+		
+		<div class="parallax" id="para2-sol">
+			<div class="display-center setfont">
+				<h1>FUNCTIONALITY</h1>
+			</div>
+		</div>
+		
+		<div class="content-container setfont">
+			<div class="row-wrapper">
+				<div class="inner">
+                    <p>In the user's everyday activity ShareSafe observes the information sharing between the user and eventual visited internet stakeholders. In cases where information is shared, the user will be notified with a little pop up window in the top right corner of the internet browser. This window will provide you with a short and concrete analysis over what type of information is shared. In the same window you will have the choice to redirect to a more detailed explanation. The user can by request turn off these alerts on specific desired websites.</p>
+                    
+					<p>In the redirected page of the notification centre you will thereby get a deeper and more detailed review over what is shared. We have chosen 3 categories that are divided into specific risk levels. These are high, medium and low risk alerts. The risk is determined by how sensitive the information is for the user. The purpose is that this process should be fast and efficient for the user to identify possible threats.</p>
+                    
+                    <p>Within the 3 categories you will be provided with a more concrete visualization of what type of information is shared between the respective Websites.</p>
+                    
+                    <p>Examples of these are:</p>
+                        <ul> 
+                            <li>Location sharing</li> 
+                            <li>Sensitive information (E-mail, username, password, etc..)</li>
+                            <li>IP - Adress </li>
+                            <li>Activity on the site ( visited ads, ect..) </li>
+                            <li>Device information </li> 
+                        </ul> 
+                    
+                    <p> All these aspects can in varying degrees be bothersome for the user and none of us wish to be watched without permission. Regardless in which scale. Take a step towards a better internet security.</p>
+                    
+                    <p>The picture bellow will give you an indication on how the real website could look. Here you will be able to download the software which will automatically be implemented in your web browser.</p>
+                    
+              <figure>     
+                <img src ="images/ShareSafe_en.png" alt ="Website for plugin download" width="100%" height="100%"> 
+                  <figcaption> A fictional website for the downloading of the plugin </figcaption>
+                    </figure>
+				</div>
+			</div>
+		</div>
+		
+		<div class="parallax" id="para3-sol">
+		</div>
+		
+		<div class="footer setfont">
+				<ul id="footer-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="problem_en.html">Our Problem</a></li>
+					<li><a href="solution_en.html">Our Solution</a></li>
+					<li><a href="sources_en.html">Sources</a></li>
+					<li id="lang"><a href="solution_en.html"> en</a></li>
+					<li id="lang"><a href="solution_no.html"> no</a></li>
+					<li id="lang"><a href="solution_de.html"> de</a></li>
+				</ul>
+		</div>
+		
+		<script>
+			var res = document.getElementById("getResponsive");
+			res.addEventListener("click", function() {
+				var lang = document.getElementsByClassName("dropdown");
+				if (res.className === "navbar setfont") {					
+					res.className += " responsive setfont";
+					lang[0].style.display = "block";
+				}
+				else {
+					res.className = "navbar setfont";
+					lang[0].style.display = "none";
+				}
+			});
+		</script>
+		
+	</body>
+</html>
